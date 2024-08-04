@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Project</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/v5.3.2bootstrap.min.ss">
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <script src="assets/js/all.js" crossorigin="anonymous"></script>
+        <link href="assets/css/custom.css" rel="stylesheet" />
+    </head>
+    <body class="sb-nav-fixed">
+
+    <!--navbutton start-->
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dar">
+        <!-- Navbar Brand-->
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+        <button class="btn btn-link btn-sm  order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="navbar-toggler-icon btn-dark"></i></button>
+    <!--navbutton end-->
+    </nav>
+
+    <div id="layoutSidenav">
+
+    <!--side bar start-->
+
+
+<div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div  class="text-center text-white">
+                        <img src="img/kstu.jpg" class="text-center" alt="" style="width: 50px;"> <br>
+                        <h1 class="text-white">kstu</h1>
+                    </div>
+                    <div class="nav">
+                        <a class="nav-link " href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                            Dashboard
+                        </a>
+
+                        <a class="nav-link " href="table.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                            Bio Data
+                        </a>
+
+                        <a class="nav-link " href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                            Registration
+                        </a>
+
+                        <a class="nav-link " href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Stetment Result
+                        </a>
+
+                        <a class="nav-link " href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-bell"></i></div>
+                            Annoucement
+                        </a>
+
+                        <a class="nav-link" href="#" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Registration
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse 
+
+                        " id="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link " href="#">Main Registration</a>
+                                <a class="nav-link " href="#">Resit Registration</a>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    <!--side bar end-->
+    <div id="layoutSidenav_content">
+
+    <main>
+
+        <div class="container-fluid px-4 mt-50">
+            <div clas="card mt-4 shadow-m">
+                <h1 class="text-center">KUMASI TECHNICAL UNIVERSITY</h1>
+                <h3 class="text-center">Student Registration System</h3>
+                <div class="card-body ">
+                    <form action="code.php" method="POST" enctype="multipart/form-data">
+        
+                        <div class="row">
+                            <div class="col-md-10 mb-3">
+                                <label for="">Index Number *</label>
+                                <input type="text" name="index" placeholder="Enter Index Number" required class="form-control">
+                            </div>
+        
+        
+                            <div class="col-md-10 mb-3">
+                                <label for="">First Name *</label>
+                                <input type="text" name="Fisrt_Name" placeholder="Enter First Name" required class="form-control">
+                            </div>
+    
+                            <div class="col-md-10 mb-3">
+                                <label for="">Last Name *</label>
+                                <input type="text" name="Last_Name" placeholder="Enter Last Name" required class="form-control">
+                            </div>
+        
+                            <div class="">
+                                <label for=""></label>
+                                Gender: F:<input type="radio" name="gender">  M:<input type="radio" name="image"> 
+                            </div>
+    
+                                
+                            <div class="col-md-10 mb-3">
+                                <label for="">Date of Birth *</label>
+                                <input type="date" name="date" placeholder="date" required class="form-control">
+                            </div>
+                                
+                            <div class="col-md-10 mb-3">
+                                <label for="">Mobile Number *</label>
+                                <input type="number" name="Mobile_Number" placeholder="Mobile Number" required class="form-control">
+                            </div>
+    
+                            <div class="col-md-10 mb-3">
+                                <label for="">Programme *</label>
+                                <input type="text" name="Programme" value="Computer Science" required class="form-control">
+                            </div>
+        
+                            <div class="col-md-6 mb-3 text-start">                         
+                                <button type="submit" name="saveProduct" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/datatables-simple-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+$(document).ready(function() {
+$('.myselect2').select2();
+});
+</script>
+<!-- PDF CDN LINK -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- PDF CDN LINK -->
+
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/sweetalert.js"></script>
+
+</body>
+</html>
